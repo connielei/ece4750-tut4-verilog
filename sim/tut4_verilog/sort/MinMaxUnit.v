@@ -17,12 +17,11 @@ module tut4_verilog_sort_MinMaxUnit
   output logic [p_nbits-1:0] out_max
 );
 
-  // ''' TUTORIAL TASK '''''''''''''''''''''''''''''''''''''''''''''''''''
-  // This model is incomplete. As part of the tutorial you will insert
-  // logic here to implement the min/max unit. You should also write a
-  // unit test from scratch named MinMaxUnit_test.py.
-  // '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
+   assign out_min = ( in0 < in1) ? in0 : in1;
+   
+   assign out_max = ( in0 < in1) ? in1 : in0;
+   
+   
 endmodule
 
 `endif /* TUT4_VERILOG_SORT_MIN_MAX_UNIT_V */
